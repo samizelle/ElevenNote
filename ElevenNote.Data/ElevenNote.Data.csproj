@@ -55,12 +55,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\201811250053184_InitialCreate.cs" />
+    <Compile Include="Migrations\201811250053184_InitialCreate.Designer.cs">
+      <DependentUpon>201811250053184_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811261546032_initialmigration.cs" />
+    <Compile Include="Migrations\201811261546032_initialmigration.Designer.cs">
+      <DependentUpon>201811261546032_initialmigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811261549085_secondmigration.cs" />
+    <Compile Include="Migrations\201811261549085_secondmigration.Designer.cs">
+      <DependentUpon>201811261549085_secondmigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201811250053184_InitialCreate.resx">
+      <DependentUpon>201811250053184_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811261546032_initialmigration.resx">
+      <DependentUpon>201811261546032_initialmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811261549085_secondmigration.resx">
+      <DependentUpon>201811261549085_secondmigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

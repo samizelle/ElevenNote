@@ -79,7 +79,7 @@
                     $.ajax({
                         method: starSet ? "DELETE" : "PUT",
                         url: "/api/note/" + noteID + "/star",
-                        date: null
+                        data: null
                     })
                         .done(function (r) {
                             target.removeClass();
